@@ -1,0 +1,49 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login to Planta</title>
+    <script
+      src="https://kit.fontawesome.com/66aa7c98b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="form-1">
+        <h1>LOG IN</h1>
+        <label for="email">Email Id</label>
+        <input type="email" name="email" id="email" required />
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+        <span>Forgot Password</span>
+        <button>Log In</button>
+        <div class="massage">
+          <h3>Password must contain the following:</h3>
+          <p id="letter" class="invalid">A lowercase letter</p>
+      <p id="capital" class="invalid">A capital (uppercase) letter</p>
+      <p id="number" class="invalid">A Numeric number</p>
+      <p id="length" class="invalid">Minimum 8 characters </p>
+        </div>
+
+        <!-- .........///sign-up///.......... -->
+
+        <h2>Sign Up Using</h2>
+        <div class="icons">
+          <a href="https://www.facebook.com/" target="blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://twitter.com/" target="blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://mail.google.com/" target="blank"
+            ><i class="fab fa-google"></i
+          ></a>
+        </div>
+      </form>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>
